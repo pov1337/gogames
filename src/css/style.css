@@ -76,7 +76,7 @@ p {
 .promo {
   background: #FFE6D7;
   min-height: 820px;
-  background-image: url(../../img/bg.png);
+  background-image: url(./../img/bg.png);
   padding: 10px 0 0 0;
   background-size: cover;
 }
@@ -295,7 +295,7 @@ p {
   background-color: #FFE6D7;
   position: relative;
   padding-top: 153px;
-  background-image: url(../../img/bg_console.png);
+  background-image: url(./../img/bg_console.png);
   background-size: cover;
 }
 .console .title {
@@ -443,7 +443,7 @@ p {
   left: 0px;
   width: 251px;
   height: 200px;
-  background-image: url("../../img/beauty.svg"); /* Путь к изображению узора */
+  background-image: url("./../img/beauty.svg"); /* Путь к изображению узора */
   background-size: cover;
   background-repeat: no-repeat;
 }
