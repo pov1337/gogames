@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=MuseoModerno:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,500&family=Roboto:wght@300;400;700&display=swap");
+.subtitle {
+  font-family: Josefin Sans;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #446381;
+}
+
+.title {
+  font-family: Josefin Sans;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EB8382;
+}
+.title span {
+  font-family: Josefin Sans;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #446381;
+}
+.title .dollar {
+  font-weight: 700;
+}
+.title .big {
+  color: #EB8382;
+  font-weight: 600;
+}
+.title span.bigblue {
+  font-weight: 600;
+}
+
+.dollar {
+  font-weight: 700;
+}
+
+.big {
+  color: #EB8382;
+  font-weight: 600;
+}
+
+span.bigblue {
+  font-weight: 600;
+}
+
+p {
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #826F8C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  width: 1167px;
+  margin: 0 auto;
+}
+
+.promo {
+  background: #FFE6D7;
+  min-height: 820px;
+  background-image: url(../../img/bg.png);
+  padding: 10px 0 0 0;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 290px;
+}
+.header__list li {
+  margin-right: 42px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #446381;
+}
+.header__list li a {
+  position: relative;
+  text-decoration: none;
+  color: #446381;
+}
+.header__list li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0; /* Начинаем с нулевой ширины */
+  height: 2px;
+  background-image: linear-gradient(94.66deg, #4499D9 17.46%, #7367BE 87.77%);
+  transition: width 0.3s ease; /* Анимация изменения ширины */
+}
+.header__list li a:hover:before {
+  width: 100%; /* Увеличиваем ширину при наведении */
+}
+
+.btn {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(94.66deg, #4499D9 17.46%, #7367BE 87.77%);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  border: none;
+  text-align: center;
+  transition: 0.2s all ease;
+}
+.btn:hover {
+  background: #4499D9;
+}
+.btn:active {
+  background: #81bcea;
+}
+
+.btn_big {
+  width: 207px;
+}
+
+.subheader {
+  margin-top: 139px;
+}
+.subheader .title {
+  margin-top: 26px;
+}
+.subheader__wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.subheader__wrapper img {
+  margin-left: 31px;
+}
+.subheader p {
+  margin-top: 31px;
+}
+.subheader .btn {
+  margin-top: 36px;
+}
+.subheader__third {
+  position: absolute;
+  top: 122px;
+  left: 852px;
+}
+.subheader__four {
+  position: absolute;
+  top: 255px;
+  left: 972px;
+}
+.subheader__two {
+  position: absolute;
+  top: 289px;
+  left: 0px;
+}
+.subheader__seven {
+  position: absolute;
+  top: 664px;
+  left: 1366px;
+}
+.subheader__one {
+  position: absolute;
+  top: 640px;
+  left: 600px;
+  animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.subheader .popup-container {
+  position: absolute;
+  top: 139px;
+  left: 923px;
+  animation: slideUp 1s ease-out; /* Анимация появления снизу вверх */
+}
+.subheader__five {
+  max-width: 600px;
+  max-height: 600px;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.subheader .popup-happy {
+  position: absolute;
+  top: 214px;
+  left: 1020px;
+  animation: zoomUp 2s linear;
+}
+@keyframes zoomUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%) scale(0.5);
+  }
+  60% {
+    opacity: 0; /* На полпути анимации элемент все еще невидим */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.vr {
+  min-height: 661px;
+  background-color: #FFE6D7;
+  padding-top: 164px;
+  position: relative;
+}
+.vr__wrapper {
+  float: right;
+}
+.vr__four {
+  position: absolute;
+  top: 526px;
+  right: 659px;
+}
+.vr__one {
+  position: absolute;
+  top: -180px;
+  right: 0%;
+}
+.vr__two {
+  position: absolute;
+  top: 84px;
+  left: 556px;
+  animation: upDown 8s linear infinite;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.vr__third {
+  position: absolute;
+  top: 105px;
+  left: 302px;
+}
+.vr .title {
+  margin-top: 30px;
+}
+.vr p {
+  margin-top: 25px;
+}
+.vr .btn {
+  margin-top: 29px;
+}
+
+.console {
+  min-height: 561px;
+  background-color: #FFE6D7;
+  position: relative;
+  padding-top: 153px;
+  background-image: url(../../img/bg_console.png);
+  background-size: cover;
+}
+.console .title {
+  margin-top: 30px;
+}
+.console p {
+  margin-top: 25px;
+}
+.console .btn {
+  margin-top: 29px;
+}
+.console__one {
+  position: absolute;
+  top: 30px;
+  right: 13%;
+}
+.console__four {
+  position: absolute;
+  top: 70%;
+  left: 42%;
+}
+.console__two {
+  position: absolute;
+  top: 18%;
+  left: 66%;
+  animation: rotate 8s linear infinite;
+}
+.console__third {
+  position: absolute;
+  top: 8%;
+  left: 70%;
+  animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.console__five {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+.console__six {
+  position: absolute;
+  top: 18%;
+  left: 56%;
+}
+.console__seven {
+  position: absolute;
+  top: 42%;
+  left: 76%;
+}
+
+.price {
+  background-color: #FFE6D7;
+  position: relative;
+  padding-top: 48px;
+  min-height: 970px;
+}
+.price__subtitle {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #446381;
+}
+.price__title {
+  text-align: center;
+  margin-top: 23px;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 75px;
+  color: #EB8382;
+}
+.price__card {
+  position: relative;
+  height: 566px;
+  width: 280px;
+  background-color: #FBDACF;
+  border-radius: 20px;
+  padding: 36px 46px 47px 46px;
+}
+.price__name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #446381;
+}
+.price__dollar {
+  margin-top: 40px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EB8382;
+}
+.price__dollar span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.price__dollar span.price__hour {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.price__name_active {
+  color: white;
+  margin-top: 25px;
+}
+.price__list {
+  margin-top: 36px;
+  list-style-type: none;
+}
+.price__list li {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 35px;
+  color: #826F8C;
+}
+.price__list li::before {
+  content: "✓";
+  margin-right: 15px;
+}
+.price__card_active {
+  background: linear-gradient(180deg, #446381 0%, #826F8C 100%);
+  height: 616px;
+}
+.price__card_active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 251px;
+  height: 200px;
+  background-image: url("../../img/beauty.svg"); /* Путь к изображению узора */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.price__list_active li {
+  color: white;
+}
+.price .btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 300px;
+}
+.price__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  min-height: 110px;
+  background-color: #FFE6D7;
+  position: relative;
+}
+.footer__wrapper {
+  padding: 25px 0 19px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #826F8C;
+}/*# sourceMappingURL=style.css.map */

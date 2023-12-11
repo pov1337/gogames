@@ -1,0 +1,122 @@
+.price{
+    background-color: #FFE6D7;
+    position: relative;
+    padding-top: 48px;
+    min-height: 970px;
+    &__subtitle{
+        text-align: center;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $blue_color;
+    }
+    &__title{
+        text-align: center;
+        margin-top: 23px;
+        font-size: 68px;
+        font-weight: 500;
+        line-height: 75px;
+        color: $pink_red_color;
+        
+    }
+    &__card{
+        position: relative;
+        height: 566px;
+        width: 280px;
+        background-color:#FBDACF;
+        border-radius: 20px;
+        padding: 36px 46px 47px 46px;
+
+    }
+
+
+
+    &__name{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue_color;
+    }
+    &__dollar{
+        margin-top: 40px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $pink_red_color;
+        span{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+        span.price__hour{
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0em;
+            text-align: center;
+
+        }
+
+    } 
+    &__name_active{
+        color: white;
+        margin-top: 25px;
+    }
+    &__list{
+        margin-top: 36px;
+        list-style-type: none;
+        li{
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 35px;
+            color: $purple_color;
+            &::before{
+                content: "\2713";
+                margin-right: 15px; 
+            }
+        }
+ 
+    }
+    &__card_active{
+        background: linear-gradient(180deg, #446381 0%, #826F8C 100%);
+        height: 616px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 251px;
+            height: 200px;
+            background-image: url('../../img/beauty.svg'); /* Путь к изображению узора */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    &__list_active{
+        li{
+            color: white;
+        }
+    }
+    .btn{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 300px;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

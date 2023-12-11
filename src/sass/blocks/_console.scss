@@ -1,0 +1,63 @@
+.console{
+    min-height: 561px;
+    background-color: #FFE6D7;
+    position: relative;
+    padding-top: 153px;
+    background-image: url(../../img/bg_console.png);
+    background-size: cover;
+    .title{
+        margin-top: 30px;
+    }
+    p{
+        margin-top: 25px;
+    }
+    .btn{
+        margin-top: 29px;
+    }
+    &__one{
+        position: absolute;
+        top: 30px;
+        right: 13%;
+    }
+    &__four{
+        position: absolute;
+        top: 70%;
+        left: 42%;
+    }
+    &__two{
+        position: absolute;
+        top: 18%;
+        left: 66%;
+        animation: rotate 8s linear infinite;
+    }
+    &__third{
+        position: absolute;
+        top: 8%;
+        left: 70%;
+        animation: rotate 8s linear infinite;
+    }
+    @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+    }
+
+    &__five{
+        position: absolute;
+        top: 30%;
+        left: 55%;
+    }
+    &__six{
+        position: absolute;
+        top: 18%;
+        left: 56%;
+    }
+    &__seven{
+        position: absolute;
+        top: 42%;
+        left: 76%;
+    }
+}

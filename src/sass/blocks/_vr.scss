@@ -1,0 +1,51 @@
+.vr{
+    min-height: 661px;
+    background-color: #FFE6D7;
+    padding-top: 164px;
+    position: relative;
+    &__wrapper{
+        float: right;
+    }   
+    &__four{
+        position: absolute;
+        top: 526px;
+        right: 659px;
+    }
+    &__one{
+        position: absolute;
+        top: -180px;
+        right: 0%;
+    }
+    &__two{
+        position: absolute;
+        top: 84px;
+        left: 556px;
+        animation: upDown 8s linear infinite;
+    }
+    @keyframes upDown {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(10%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    
+    &__third{
+        position: absolute;
+        top: 105px;
+        left: 302px;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    p{
+        margin-top: 25px;
+    }
+    .btn{
+        margin-top: 29px;
+    }
+}

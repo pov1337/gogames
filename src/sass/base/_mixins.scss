@@ -1,0 +1,57 @@
+.subtitle{
+    font-family: Josefin Sans;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $blue_color;
+}
+
+.title{
+    font-family: Josefin Sans;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $pink_red_color;
+    span{
+        font-family: Josefin Sans;
+        font-size: 68px;
+        font-weight: 500;
+        line-height: 75px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue_color;
+    }
+    .dollar{
+        font-weight: 700;
+    }
+    .big{
+        color: $pink_red_color;
+        font-weight: 600;
+    }
+    span.bigblue{
+        font-weight: 600;
+    } 
+}
+.dollar{
+    font-weight: 700;
+}
+.big{
+    color: $pink_red_color;
+    font-weight: 600;
+}
+span.bigblue{
+    font-weight: 600;
+} 
+p{
+    font-family: Josefin Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $purple_color;
+}   

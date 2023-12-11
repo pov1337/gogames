@@ -1,0 +1,23 @@
+@import 'base/fonts';
+@import 'base/variable';
+@import 'base/mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    width: 1167px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/subheader';
+@import 'blocks/vr';
+@import 'blocks/console';
+@import 'blocks/price';
+@import 'blocks/footer';

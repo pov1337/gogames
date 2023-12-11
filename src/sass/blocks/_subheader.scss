@@ -1,0 +1,99 @@
+.subheader{
+    margin-top: 139px;
+    .title{
+        margin-top: 26px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        img{
+            margin-left: 31px;
+            
+        }
+    }
+    p{
+        margin-top: 31px;
+    }
+    .btn{
+        margin-top: 36px;
+    }
+    &__third{
+        position: absolute;
+        top: 122px;
+        left: 852px;
+
+    }
+    &__four{
+        position: absolute;
+        top: 255px;
+        left: 972px;
+    }
+    &__two{
+        position: absolute;
+        top: 289px;
+        left: 0px;
+    }
+    &__seven{
+        position: absolute;
+        top: 664px;
+        left: 1366px;
+    }
+
+    &__one{
+        position: absolute;
+        top: 640px;
+        left: 600px;
+        animation: rotate 8s linear infinite;
+    }
+    @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+    }
+    .popup-container {
+        position: absolute;
+        top: 139px;
+        left: 923px;
+        animation: slideUp 1s ease-out; /* Анимация появления снизу вверх */
+    }
+    &__five{
+        max-width: 600px;
+        max-height: 600px;
+    }
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20%);
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .popup-happy{
+        position: absolute;
+        top: 214px;
+        left: 1020px;
+        animation: zoomUp 2s linear;
+
+    }
+    @keyframes zoomUp {
+        0% {
+            opacity: 0;
+            transform: translateY(10%) scale(0.5);
+          }
+          60% {
+            opacity: 0; /* На полпути анимации элемент все еще невидим */
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+    }
+    
+}

@@ -1,0 +1,32 @@
+.btn{
+    position: relative;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(94.66deg, #4499D9 17.46%, #7367BE 87.77%);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    border: none;
+    text-align: center;
+
+    transition: 0.2s all ease;
+
+    &:hover{
+        background: #4499D9;
+    }
+    &:active{
+        background: #81bcea;
+    }
+
+}
+.btn_big{
+    width: 207px;
+}
+
+
+
+
+

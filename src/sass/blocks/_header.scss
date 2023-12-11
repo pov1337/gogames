@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        margin-left: 290px;
+
+        li {
+            margin-right: 42px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            color: $blue_color;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                color: $blue_color;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 0; /* Начинаем с нулевой ширины */
+                    height: 2px;
+                    background-image: linear-gradient(94.66deg, #4499D9 17.46%, #7367BE 87.77%);
+                    transition: width 0.3s ease; /* Анимация изменения ширины */
+                }
+
+                &:hover:before {
+                    width: 100%; /* Увеличиваем ширину при наведении */
+                }
+            }
+        }
+    }
+}
